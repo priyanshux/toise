@@ -10,7 +10,7 @@ body {
 
 .image-top {
     position: relative;
-    background-image: url('image1.png');
+    background-image: url('image1.webp');
     background-size: cover;
     background-position: center;
     flex: 1.9;
@@ -58,7 +58,7 @@ body {
 }
 
 .image-bottom {
-    background-image: url('image2.png');
+    background-image: url('image2.webp');
     background-size: cover;
     background-position: center;
     flex: 1;
