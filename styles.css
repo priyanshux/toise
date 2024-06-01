@@ -7,6 +7,13 @@
     src: url('Syne.ttf') format('truetype'); 
 }
 
+@font-face {
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 400 700;
+    src: url('DarkerGrotesque.ttf') format('truetype'); 
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -24,7 +31,7 @@ body {
     background-position: center;
     flex: 1.9;
     opacity: 0;
-    animation: fadeIn 0.1s forwards;
+    animation: fadeIn 1s forwards;
 }
 
 .tortoise {
@@ -33,7 +40,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     height: 25vh; 
-    animation: rocking 2s ease-in-out infinite alternate, fadeIn 3s forwards;
+    animation: rocking 2s ease-in-out infinite alternate, fadeIn 1.5s forwards;
 }
 
 @keyframes rocking {
@@ -62,7 +69,7 @@ body {
     padding: 8px;
     text-align: center;
     opacity: 0;
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 2s forwards;
 }
 
 .somethings-brewing {
@@ -78,7 +85,7 @@ body {
     display: block;
     font-size: 24px;
     opacity: 0;
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 2.5s forwards;
 }
 
 .image-bottom {
@@ -87,7 +94,7 @@ body {
     background-position: center;
     flex: 1;
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 2s forwards;
 }
 
 .logo {
@@ -97,12 +104,12 @@ body {
     transform: translateX(-50%);
     height: 18.5vh;
     opacity: 0;
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 1.5s forwards;
 }
 
 .footer {
     position: fixed; 
-    bottom: 0;
+    bottom: 2%;
     width: 100%;
     text-align: center;
     margin: 0;
@@ -110,17 +117,18 @@ body {
     color: #4B382A; 
     text-decoration: none;
     opacity: 0;
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 5s forwards;
 }
 
-.footer:hover .footer-text {
+.footer:hover .footer-text:hover {
     color: #6d9ce3; 
 }
 
 .footer-text {
     font-family: 'Darker Grotesque', sans-serif; 
-    font-size: 15px;
+    font-size: 20px;
     color: #4B382A; 
+    text-decoration: none;
 }
 
 /* Media query for smaller screens */
