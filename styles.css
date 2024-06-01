@@ -108,18 +108,20 @@ body {
     }
 
     .text-wrapper {
-        font-size: 30px; /* Adjust font size for smaller screens */
+        font-size: 35px; /* Adjust font size for smaller screens */
     }
 
     .span {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
     }
 
     .logo {
-        height: 15vh; /* Adjust logo size for smaller screens */
+        height: 12vh; /* Adjust logo size for smaller screens */
     }
 
     .image-top {
         flex: 1.75;
     }
+    .tortoise {
+    height: 18vh; 
 }
