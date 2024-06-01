@@ -1,0 +1,117 @@
+/* Default styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Syne', sans-serif;
+}
+
+.image-top {
+    position: relative;
+    background-image: url('image1.png');
+    background-size: cover;
+    background-position: center;
+    flex: 1.9;
+}
+
+.tortoise {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 25vh; /* 25% of the vertical height */
+    animation: rocking 2s ease-in-out infinite alternate; /* Animation for rocking */
+}
+
+@keyframes rocking {
+    0% {
+        transform: translateX(-50%) rotateZ(37.5deg); /* Initial position */
+    }
+    100% {
+        transform: translateX(-50%) rotateZ(-10deg); /* Final position */
+    }
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EBBA30;
+    padding: 8px;
+    text-align: center;
+}
+
+.somethings-brewing {
+    margin: 0;
+    font-size: 70px;
+}
+
+.text-wrapper {
+    display: block;
+}
+
+.span {
+    display: block;
+    font-size: 20px;
+}
+
+.image-bottom {
+    background-image: url('image2.png');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 18.5vh;
+}
+
+.footer {
+    position: fixed; /* or position: absolute; */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #4B382A; /* Dark roast color */
+    text-decoration: none; /* Remove underline from the anchor */
+}
+
+.footer:hover .footer-text {
+    color: #6d9ce3; /* Light blue color on hover */
+}
+
+.footer-text {
+    font-family: 'Darker Grotesque', sans-serif; /* Apply Darker Grotesque font to the footer text */
+    font-size: 15px;
+    color: #4B382A; /* Dark roast color */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .somethings-brewing {
+        font-size: 50px; /* Adjust font size for smaller screens */
+    }
+
+    .text-wrapper {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .span {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .logo {
+        height: 18.5vh; /* Adjust logo size for smaller screens */
+    }
+
+    .image-top {
+        flex: 1.75;
+    }
+}
