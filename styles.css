@@ -87,18 +87,23 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #4B382A; 
-    text-decoration: none; 
-}
-
-.footer:hover .footer-text {
-    color: #6d9ce3; 
 }
 
 .footer-text {
     font-family: 'Darker Grotesque', sans-serif; 
     font-size: 15px;
     color: #4B382A; 
+    text-decoration: none; /* Remove default underline */
+}
+
+.footer-text a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Add underline to link */
+}
+
+.footer-text a:hover {
+    color: #6d9ce3; /* Change color on hover */
+    text-decoration: none; /* Maintain underline on hover */
 }
 
 /* Media query for smaller screens */
@@ -123,5 +128,6 @@ body {
         flex: 1.75;
     }
     .tortoise {
-    height: 18vh; 
+        height: 18vh; 
+    }
 }
