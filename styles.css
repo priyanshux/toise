@@ -38,7 +38,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotateZ(37.5deg);
     height: 25vh; 
     animation: rocking 2s ease-in-out infinite alternate, fadeIn 1.5s forwards;
 }
@@ -134,19 +134,19 @@ body {
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
     .somethings-brewing {
-        font-size: 50px; /* Adjust font size for smaller screens */
+        font-size: 50px; 
     }
 
     .text-wrapper {
-        font-size: 35px; /* Adjust font size for smaller screens */
+        font-size: 35px; 
     }
 
     .span {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px; 
     }
 
     .logo {
-        height: 12vh; /* Adjust logo size for smaller screens */
+        height: 12vh; 
     }
 
     .image-top {
