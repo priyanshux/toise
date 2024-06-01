@@ -21,8 +21,8 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 25vh; /* 25% of the vertical height */
-    animation: rocking 2s ease-in-out infinite alternate; /* Animation for rocking */
+    height: 25vh; 
+    animation: rocking 2s ease-in-out infinite alternate; 
 }
 
 @keyframes rocking {
@@ -73,24 +73,24 @@ body {
 }
 
 .footer {
-    position: fixed; /* or position: absolute; */
+    position: fixed; 
     bottom: 0;
     width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #4B382A; /* Dark roast color */
-    text-decoration: none; /* Remove underline from the anchor */
+    color: #4B382A; 
+    text-decoration: none; 
 }
 
 .footer:hover .footer-text {
-    color: #6d9ce3; /* Light blue color on hover */
+    color: #6d9ce3; 
 }
 
 .footer-text {
-    font-family: 'Darker Grotesque', sans-serif; /* Apply Darker Grotesque font to the footer text */
+    font-family: 'Darker Grotesque', sans-serif; 
     font-size: 15px;
-    color: #4B382A; /* Dark roast color */
+    color: #4B382A; 
 }
 
 /* Media query for smaller screens */
