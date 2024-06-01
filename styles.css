@@ -1,4 +1,12 @@
 /* Default styles */
+
+@font-face {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400 700;
+    src: url('Syne.ttf') format('truetype'); 
+}
+
 body {
     margin: 0;
     padding: 0;
