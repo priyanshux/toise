@@ -35,7 +35,7 @@ body {
 
 @keyframes rocking {
     0% {
-        transform: translateX(-50%) rotateZ(37.5deg); /* Initial position */
+        transform: translateX(-50%) rotateZ(35deg); /* Initial position */
     }
     100% {
         transform: translateX(-50%) rotateZ(-10deg); /* Final position */
