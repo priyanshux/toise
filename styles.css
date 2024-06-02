@@ -39,9 +39,12 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%) rotateZ(37.5deg);
-    height: 25vh; 
+    height: 25vh;
     animation: rocking 2s ease-in-out infinite alternate, fadeIn 1.5s forwards;
+    opacity: 0; /* Ensure it starts invisible */
+    transition: opacity 1.5s ease-in-out; /* Smooth transition for visibility */
 }
+
 
 @keyframes rocking {
     0% {
