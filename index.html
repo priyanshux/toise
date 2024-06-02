@@ -4,40 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toise</title>
-    <style>
-        /* Include critical CSS for initial load */
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            font-family: 'Syne', sans-serif;
-            overflow: hidden;
-        }
-        .image-top {
-            position: relative;
-            background-size: cover;
-            background-position: center;
-            flex: 1.9;
-            opacity: 0;
-            animation: fadeIn 1s forwards;
-        }
-        .tortoise {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%) rotateZ(37.5deg);
-            height: 25vh;
-            animation: rocking 2s ease-in-out infinite alternate, fadeIn 1.5s forwards;
-            opacity: 0;
-            transition: opacity 1.5s ease-in-out;
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="preload" href="image1.webp" as="image">
     <link rel="preload" href="image2.webp" as="image">
@@ -57,7 +23,7 @@
             </p>
         </div>
         <div class="footer fade-in">
-            <a href="mailto:contact@toise.coffee" class="footer-text fade-in">contact@toise.coffeeee</a>
+            <a href="mailto:contact@toise.coffee" class="footer-text fade-in">contact@toise.coffee</a>
         </div>
     </div>
     <script>
@@ -65,7 +31,6 @@
             const tortoise = document.querySelector('.tortoise');
             tortoise.style.left = '50%';
             tortoise.style.transform = 'translateX(-50%) rotateZ(37.5deg)';
-            tortoise.style.opacity = '1';
         });
     </script>
 </body>
