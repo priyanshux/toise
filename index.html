@@ -9,8 +9,14 @@
     <link rel="preload" href="image2.webp" as="image">
     <link rel="preload" href="tortoise.webp" as="image">
     <link rel="preload" href="logo.webp" as="image">
+    <style>
+        /* Initial hidden class */
+        body.hidden {
+            visibility: hidden;
+        }
+    </style>
 </head>
-<body>
+<body class="hidden">
     <div class="image-top fade-in">
         <img src="tortoise.webp" alt="Tortoise" class="tortoise fade-in">
         <img src="logo.webp" alt="Logo" class="logo fade-in">
@@ -23,11 +29,14 @@
             </p>
         </div>
         <div class="footer fade-in">
-            <a href="mailto:contact@toise.coffee" class="footer-text fade-in">contact@toise.coffee</a>
+            <a href="mailto:social@toise.coffee" class="footer-text fade-in">Contact - social@toise.coffee</a>
         </div>
     </div>
     <script>
         window.addEventListener('load', () => {
+            // Remove the hidden class to show the body
+            document.body.classList.remove('hidden');
+
             const tortoise = document.querySelector('.tortoise');
             tortoise.style.left = '50%';
             tortoise.style.transform = 'translateX(-50%) rotateZ(37.5deg)';
